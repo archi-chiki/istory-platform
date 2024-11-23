@@ -11,19 +11,19 @@
 variable "aws_region" {
   description = "AWS Region"
   type        = string
-  default     = "ap-northeast-2"  # 기본값 설정 (선택사항)
+  default     = "ap-northeast-2" # 기본값 설정 (선택사항)
 }
 
 variable "vpc_name" {
   description = "name of vpc"
   type        = string
-  default     = "dangtong"
+  default     = "archichiki"
 }
 
 variable "cluster_name" {
   description = "name of cluster"
   type        = string
-  default     = "istory"
+  default     = "istory-dev"
 }
 
 variable "cluster_version" {
@@ -35,11 +35,11 @@ variable "cluster_version" {
 variable "environment" {
   description = "Environment name (e.g., dev, stg, prd)"
   type        = string
-  default     = "dev"  # 필요한 경우 기본값 설정
+  default     = "dev" # 필요한 경우 기본값 설정
 }
 
 variable "terraform_aws_profile" {
   description = "AWS profile for Terraform"
   type        = string
-  default     = "default"
+  default     = "aws-cicd"
 }
